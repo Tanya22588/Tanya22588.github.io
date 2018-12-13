@@ -1,3 +1,1 @@
-# Tanya22588.github.io-
-My Projekt
-Shoper
+# Tanya22588.github.io
