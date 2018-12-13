@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SHOPER</title>
+    <!--ботстрап-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Инструкция для ІЕ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Отображать страницу в масштабе 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--!!!!!!нормалізація стилів!!!!!!!  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <!--!!!!!!!власні стилів !!!!!!! -->
+    <link rel="stylesheet" href="css/main.css">
+    <!--!!!!!!!підключення веб-шрифтів!!!!!  -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:400,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon16x16.png">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    
+
+
+    <!-- кільцева діаграма-->
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+   
+    <!--Ламана-->
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+</head>
+
+<body>
+
+    <!-- ...............
+    ....TOP-NAV (панель зверху)
+    ..........................-->
+
+    <div class="top-nav">
+        <div class="button_grin">
+            <i class="fa fa-outdent" aria-hidden="true"></i>
+
+        </div>
+
+        <!-- ...................................................
+    NAV-RIGHT (кількiсть повідомлень і відвідування сторінки)
+    ....................................-->
+
+        <div class="nav-right">
+
+            <i class="fa fa-bell" aria-hidden="true">
+                <div class="min-box">
+                    8
+                </div>
+            </i>
+
+            <i class="fa fa-envelope" aria-hidden="true">
+
+                <!-- спливаюче повідомлення-->
+                <li class="dropdown"><a class="active" href="#home" class="dropbtn">
+                        <div class="min-box1">
+                            3
+                        </div>
+                    </a>
+                    <div class="dropdown-content1">
+                        <!-- ...................................................
+    NOTIFICATION-BOX (бокс для відображень повідомлень і сповіщень невидиме)
+    ....................................-->
+
+                        <div class="notification-box">
+                            <div class="notification-text"> You have 3 Messages </div>
+                            <div class="group1">
+                                <img src="img/avatar/image.jpg" alt="foto" class="round2" height="40px" width="40px">
+                                <div class="group1_text-name">
+                                    Lum Khan </div>
+                                <div class="group1_text-time">2 hours ago</div>
+                                <div class="group1_text-message">Lorem ipsum dolor sit amet.</div>
+
+                            </div>
+                            <div class="group1_copy">
+                                <img src="img/avatar/image.jpg" alt="avatar" class="round2" height="40px" width="40px">
+                                <div class="group1_text-name">
+                                    Lum Khan </div>
+                                <div class="group1_text-time">2 hours ago</div>
+                                <div class="group1_text-message">Lorem ipsum dolor sit amet.</div>
+                            </div>
+
+                            <div class="group1_copy2">
+                                <img src="img/avatar/image.jpg" alt="avatar" class="round2" height="40px" width="40px">
+                                <div class="group1_text-name">
+                                    Lum Khan </div>
+                                <div class="group1_text-time">2 hours ago</div>
+                                <div class="group1_text-message">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                            <div class="rectangle">
+                                View all Messages
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </li>
+
+            </i>
+            <i class="fa fa-align-left" aria-hidden="true">
+                <div class="min-box">
+                    8
+                </div>
+            </i>
+            <span class="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+
+        </div>
+
+        <!-- ...................................................
+    NAV-LEFT (відкрити бічну панель, пошук)
+    ....................................-->
+        <img src="img/avatar/avatar.jpg" alt="Cat" class="round" height="40px" width="40px">
+        <div class="nav-left">
+            Jisan
+            <a href="#">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <!--..... лінія під навігацією......-->
+        <div class="line">
+            <hr>
+        </div>
+    </div>
+
+
+    <!-- .................................
+....ASIDE (панель збоку)...................
+......................-->
+    <div class="aside">
+        <!-- .................................
+....ASIDE logo (шапка в панелі збоку)...................
+......................-->
+        <div class="logo">
+            <img src="img/logo/shop.jpg" alt="Shop" height="50px">
+            <div class="logo_head">
+                <div class="logo-text">
+                    SHOPPE&#x301R
+                </div>
+                <div class="logo-shape">
+                    BUY WITH HAPPINESS
+                </div>
+            </div>
+        </div>
+
+        <!--..... ................
+    ....PROFILE.......
+    ........................-->
+        <div class="profile">
+            <div class="user_avatar">
+                <img src="img/avatar/avatar.jpg" alt="avatar" height="70px" class="round3">
+            </div>
+            <div class="profile_droup14">
+                <div class="profile_name"> Jahangir Alam Jisan</div>
+                <div class="profile_profetion"> UX Designer </div>
+                <div class="profile_icon">
+                    <i class="fa fa-user"></i>
+                    <i class="fa fa-edit"></i>
+                    <i class="fa fa-sign-out"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--..... ................
+    ....SIDE-NAV (бічне меню).......
+    ........................-->
+        <div class="side-nav-group13">
+            <div class="nav-group13-head"> GENERAL </div>
+
+<button class="accordion"><div class="nav-group13">
+                <div class="icon-befor">
+                    <i class="fa fa-tachometer"></i>
+                </div>
+                <div class="nav-group13-text">Dashboard </div>
+</div></button>
+            
+<div class="panel">
+  <p> <span class="kolo_green"> &#927 </span>Dashboard 1</p>
+  <p> <span class="kolo_blue">&#927 </span>Dashboard 2</p>
+  <p> <span class="kolo_orang">&#927 </span>Comming Soon</p>
+</div>
+            
+
+            <button class="accordion"><div class="nav-group13">
+                <div class="icon-befor">
+                    <i class="fa fa-desktop"></i>
+                </div>
+                <div class="nav-group13-text">Layouts </div>
+                
+                </div> </button>
+                <div class="panel">
+  <p> <span class="kolo_green"> &#927 </span>Layouts 1</p>
+  <p> <span class="kolo_blue">&#927 </span>Layouts 2</p>
+  <p> <span class="kolo_orang">&#927 </span>Comming Soon</p>
+  
+</div>
+          <button class="accordion">  <div class="nav-group13">
+                <div class="icon-befor">
+                    <i class="fa fa-folder"></i>
+                </div>
+                <div class="nav-group13-text">Pagest </div>
+
+              </div> </button>
+              <div class="panel">
+ <p> <span class="kolo_green"> &#927 </span>Pagest 1</p>
+  <p> <span class="kolo_blue">&#927 </span>Pagest 2</p>
+  <p> <span class="kolo_orang">&#927 </span>Comming Soon</p>
+</div>
+
+            <!-- 8 елементів бічної панелі-->
+            <hr>
+
+            <div class="nav-group13-head"> ELEMENTS </div>
+
+            <div class="nav-group13">
+                <div class="icon-befor">
+                    <i class="fa fa-file"></i>
+                </div>
+                <div class="nav-group13-text">Invoice </div>
+
+            </div>
+            <div class="nav-group13">
+                <div class="icon-befor">
+                    <i class="fa fa-file"></i>
+                </div>
+                <div class="nav-group13-text">Charts </div>
+
+            </div>
+            <div class="nav-group13">
+                <div class="icon-befor">
+                    <i class="fa fa-code"></i>
+                </div>
+                <div class="nav-group13-text">Snippets </div>
+
+            </div>
+            <div class="nav-group13">
+                <div class="icon-befor">
+                    <i class="fa fa-gavel"></i>
+                </div>
+                <div class="nav-group13-text">UI Widgets </div>
+
+            </div>
+            <div class="nav-group13">
+                <div class="icon-befor">
+                    <i class="fa fa-pencil"></i>
+                </div>
+                <div class="nav-group13-text">Forms </div>
+
+            </div>
+            <div class="nav-group13">
+                <div class="icon-befor">
+                    <i class="fa fa-cubes"></i>
+                </div>
+                <div class="nav-group13-text">Componnets </div>
+
+            </div>
+            <div class="nav-group13">
+                <div class="icon-befor">
+                    <i class="fa fa-puzzle-piece"></i>
+                </div>
+                <div class="nav-group13-text">Plugin </div>
+
+            </div>
+            <div class="nav-group13">
+                <div class="icon-befor">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="nav-group13-text">Email </div>
+
+            </div>
+        </div>
+
+        <div class="border-seperator">
+            <div class="line_copy">
+
+            </div>
+
+        </div>
+        <div class="labels">
+
+        </div>
+    </div>
+
+    <div class="content">
+        <!--навігаційна цепочка-->
+
+        <div class="nav_period">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active2" aria-current="page"> All Site View</li>
+                </ol>
+            </nav>
+            <div class="data1">
+                <span class="period"> Reparting Period</span>
+                <span class="period_data1"> Last 30 Day's
+
+                    <a href="#">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+
+                </span>
+            </div>
+        </div>
+
+        <!--чотири картинки-->
+        <div class="top_overview">
+            <div class="top_overview1">
+                <div class="overvie_image">
+                    <img src="img/ovorwey/1.png" alt="people">
+                </div>
+
+                <button class="button_overview"> Visitors </button>
+
+                <div class="overview_text">
+                    <span> <span class="red-row">&#8593 </span> 125 K <span class="red-text">(+0.50%)</span>
+                    </span>
+                </div>
+
+            </div>
+            <div class="top_overview1">
+                <div class="overvie_image">
+                    <img src="img/ovorwey/2.png" alt="people">
+                </div>
+                <button class="button_overview">
+                    New Order
+                </button>
+                <div class="overview_text">
+                    28K
+                </div>
+
+            </div>
+            <div class="top_overview1">
+                <div class="overvie_image">
+                    <img src="img/ovorwey/3.png" alt="bax">
+                </div>
+                <button class="button_overview">
+                    Sales
+                </button>
+                <div class="overview_text">
+                    25 K
+                </div>
+
+            </div>
+            <div class="top_overview1">
+                <div class="overvie_image">
+                    <img src="img/ovorwey/4.png" alt="people">
+                </div>
+                <button class="button_overview">
+                    Shipping
+                </button>
+                <div class="overview_text">
+                    12K
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!--..... ................
+    ....CONTENT.......
+    ........................-->
+
+
+
+        <div class="site_visits">
+            <div class="recent_top0">
+                <div class="recent_top_left">
+                    <span class="recent_left_text">EARNING GRAPH OVERVIEV</span>
+                    <span class="recent_left_icon"> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
+                </div>
+                <div class="recent_top_reight">
+                    <span class="recent_recet"><i class="fa fa-undo"></i></span>
+                    <span class="recent_recet"><i class="fa fa-chevron-down"></i></span>
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button></div>
+            </div>
+            <div id="chartContainer" class="chartGraph1" ></div>
+
+        </div>
+
+
+        <!--СТАТИСТИКА ПІД ГРАФІКОМ-->
+
+        <div class="site_visits2">
+            <div class="site_visits21">
+                <div class="site_visits211"> $13,234 </div>
+                <div class="site_visits212"> Revenue </div>
+            </div>
+            <div class="site_visits22">
+                <div class="site_visits211"> 2,35,090 </div>
+                <div class="site_visits212"> Order </div>
+            </div>
+            <div class="site_visits23">
+                <div class="site_visits211"> $1,34,900 </div>
+                <div class="site_visits212"> Tax </div>
+            </div>
+            <div class="site_visits24">
+                <div class="site_visits211"> $1,134 </div>
+                <div class="site_visits212"> Shipment </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- +  Карта + трафік -->
+
+        <div class="map_traffic">
+
+            <div class="map">
+                <div class="recent_top0">
+                    <div class="recent_top_left">
+                        <span class="recent_left_text">TOP SEARCH</span>
+                        <span class="recent_left_icon"> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
+                    </div>
+                    <div class="recent_top_reight">
+                        <span class="recent_recet"><i class="fa fa-undo"></i></span>
+                        <span class="recent_recet"><i class="fa fa-chevron-down"></i></span>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button></div>
+                </div>
+                <div class="top_map">
+                    <div class="map_left">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d102509199.61147788!2d11.142840112206478!3d24.92142889974935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sby!4v1454702477007" width="495" height="360" frameborder="0" class="mapframe"  allowfullscreen=""></iframe>
+                    </div>
+                    <div class="map_reight">
+                        <div class="map_reight1">
+                            <div class="map_min"> <img src="img/map/A.jpg" alt="America"> </div>
+                            <div class="map_text">
+                                <div class="map_text_top">America</div>
+                                <div class="map_text_end">46%</div>
+                            </div>
+                        </div>
+                        <div class="map_reight1">
+                            <div class="map_min"> <img src="img/map/U.jpg" alt="U.Kingdom"> </div>
+                            <div class="map_text">
+                                <div class="map_text_top">U.Kingdom</div>
+                                <div class="map_text_end">24%</div>
+                            </div>
+                        </div>
+                        <div class="map_reight1">
+                            <div class="map_min"> <img src="img/map/B.jpg" alt="Bangladesh"> </div>
+                            <div class="map_text">
+                                <div class="map_text_top">Bangladesh</div>
+                                <div class="map_text_end">18%</div>
+                            </div>
+                        </div>
+                        <div class="map_reight1">
+                            <div class="map_min"> <img src="img/map/C.jpg" alt="Canada"> </div>
+                            <div class="map_text">
+                                <div class="map_text_top">Canada</div>
+                                <div class="map_text_end">12%</div>
+                            </div>
+                        </div>
+                        <div class="map_reight1">
+                            <div class="map_min"> <img src="img/map/R.jpg" alt="Russia"> </div>
+                            <div class="map_text">
+                                <div class="map_text_top">Russia</div>
+                                <div class="map_text_end">10%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--трафік-->
+            <div class="traffic_sources">
+                <div class="recent_top0">
+                    <div class="recent_top_left">
+                        <span class="recent_left_text">TRAFFIC SOURCES</span>
+                        <span class="recent_left_icon"> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
+                    </div>
+                    <div class="recent_top_reight">
+                        <span class="recent_recet"><i class="fa fa-chevron-down"></i></span>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button></div>
+                </div>
+                <div class="traffic_content">
+                    <div>
+                        <button type="button" onclick="#" class="traffic_button1"> Direct</button>
+                    </div>
+                    <div class="traffic_text"> 1200</div>
+                    <div class="traffic_img"> <img src="img/traffic/1.jpg" alt="1200" width="100px"></div>
+
+                </div>
+                <div class="traffic_content">
+                    <div>
+                        <button type="button" onclick="#" class="traffic_button2"> Refer</button>
+                    </div>
+                    <div class="traffic_text"> 1150</div>
+                    <div class="traffic_img"> <img src="img/traffic/2.jpg" alt="1150" width="100px"></div>
+
+                </div>
+                <div class="traffic_content">
+                    <div>
+                        <button type="button" onclick="#" class="traffic_button3"> Social</button>
+                    </div>
+                    <div class="traffic_text"> 980</div>
+                    <div class="traffic_img"> <img src="img/traffic/3.jpg" alt="980" width="100px"></div>
+
+                </div>
+                <div class="traffic_content">
+                    <div>
+                        <button type="button" onclick="#" class="traffic_button4"> Search</button>
+                    </div>
+                    <div class="traffic_text"> 720</div>
+                    <div class="traffic_img"> <img src="img/traffic/4.jpg" alt="720" width="100px"></div>
+
+                </div>
+                <div class="traffic_content">
+                    <div>
+                        <button type="button" onclick="#" class="traffic_button5"> Internal</button>
+                    </div>
+                    <div class="traffic_text"> 600</div>
+                    <div class="traffic_img"> <img src="img/traffic/5.jpg" alt="600" width="100px"></div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+        <!-- таблиця Прайс цін-->
+
+        <div class="recent_order">
+            <div class="recent_top0">
+                <div class="recent_top_left">
+                    <span class="recent_left_text">RECENT ORDER</span>
+                    <span class="recent_left_icon"> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
+                </div>
+                <div class="recent_top_reight">
+                    <span class="recent_recet"><i class="fa fa-chevron-down"></i></span>
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button></div>
+            </div>
+            <div class="recent_top1">
+                <div class="recent_top1_text"> IMAGE </div>
+                <div class="recent_top1_text"> PRODUCT NAME</div>
+                <div class="recent_top1_text"> PRODUCT CODE </div>
+                <div class="recent_top1_text"> STATUS </div>
+                <div class="recent_top1_text"> PURCHASED ON </div>
+                <div class="recent_top1_text"> PRICE </div>
+                <div class="recent_top1_text"> QUNTITY </div>
+                <div class="recent_top1_text"> TRACKING# </div>
+            </div>
+            <div class="recent_order_content">
+                <div class="recent_image">
+                    <div class="recent_image1">
+                        <img src="img/rec/1.jpg" alt="Leisure_red">
+                    </div>
+                    <div class="recent_image1">
+                        <img src="img/rec/2.jpg" alt="Leisure_grey">
+                    </div>
+                    <div class="recent_image1">
+                        <img src="img/rec/3.jpg" alt="Leisure_yellow">
+                    </div>
+                    <div class="recent_image1">
+                        <img src="img/rec/4.jpg" alt="Leisure_blek">
+                    </div>
+                </div>
+                <div class="recent_PrName">
+                    <div class="recent_PrName1">Leisure Suit Casual</div>
+                    <div class="recent_PrName1">Cotton Fleece Casual</div>
+                    <div class="recent_PrName1">Formal Slim Fit Casual</div>
+                    <div class="recent_PrName1">Velvet Patchwork Casual</div>
+                </div>
+                <div class="recent_PrCode">
+                    <div class="recent_PrName1">3BSD59</div>
+                    <div class="recent_PrName1">3BH87G</div>
+                    <div class="recent_PrName1">4D3GHT</div>
+                    <div class="recent_PrName1">5D4H3G</div>
+                </div>
+                <div class="recent_Status">
+                    <div>
+                        <button type="button" onclick="#" class="recent_button1"> Paid</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="#" class="recent_button2"> Pending</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="#" class="recent_button3"> Paid</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="#" class="recent_button4"> Failed</button>
+                    </div>
+                </div>
+                <div class="recent_PrCode">
+                    <div class="recent_PrName1">27 Sep 2015</div>
+                    <div class="recent_PrName1">08 Sep 2015</div>
+                    <div class="recent_PrName1">25 Aug 2015</div>
+                    <div class="recent_PrName1">27 Sep 2015</div>
+                </div>
+                <div class="recent_Price">
+                    <div class="recent_PrName1">$99.00</div>
+                    <div class="recent_PrName1">$99.00</div>
+                    <div class="recent_PrName1">$99.00</div>
+                    <div class="recent_PrName1">$99.00</div>
+                </div>
+                <div class="recent_Quantity">
+                    <div class="recent_PrName1">2</div>
+                    <div class="recent_PrName1">2</div>
+                    <div class="recent_PrName1">2</div>
+                    <div class="recent_PrName1">2</div>
+                </div>
+                <div class="recent_Price">
+                    <div class="recent_PrName1">#BG6R9853LP</div>
+                    <div class="recent_PrName1">#36BQRM83B</div>
+                    <div class="recent_PrName1">#AXZ6F58T3V</div>
+                    <div class="recent_PrName1">#SD89HK561</div>
+                </div>
+                <div class="recent_order4"></div>
+            </div>
+
+
+
+        </div>
+        <!--Два останні графіка-->
+        <div class="visits">
+
+            <div class="visits_grph">
+                <div class="recent_top0">
+                    <div class="recent_top_left">
+                        <span class="recent_left_text">SITE VISITS</span>
+                        <span class="recent_left_icon"> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
+                    </div>
+                    <div class="recent_top_reight">
+                        <span class="recent_recet"><i class="fa fa-undo"></i></span>
+                        <span class="recent_recet"><i class="fa fa-chevron-down"></i></span>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button></div>
+                </div>
+                <div id="chart_div" class="chartdiv" ></div>
+                <div class="visit_after">
+                    <div class="visit_aftergraf1"> <img src="img/visits/1.jpg" alt="New"> </div>
+                    <div class="visit_aftertext1">
+                        <div class="visit_aftertext10"> New Visitor</div>
+                        <div class="visit_aftertext11"> 12,202</div>
+                        <div></div>
+                    </div>
+                    <div class="visit_aftergraf1"> <img src="img/visits/2.jpg" alt="Old"></div>
+                    <div class="visit_aftertext1">
+                        <div class="visit_aftertext10"> Old Visitor </div>
+                        <div class="visit_aftertext11"> 25,051 </div>
+                    </div>
+                </div>
+            </div>
+            <div class="campaign">
+                <div class="recent_top0">
+                    <div class="recent_top_left">
+                        <span class="recent_left_text">MARKETING CAMPAIGN</span>
+                        <span class="recent_left_icon"> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
+                    </div>
+                    <div class="recent_top_reight">
+                        <span class="recent_recet"><i class="fa fa-undo"></i></span>
+                        <span class="recent_recet"><i class="fa fa-chevron-down"></i></span>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button></div>
+                </div>
+                <div id='myChart' class="mychartend" ><a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a></div>
+                <script src="script.js"></script>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</body>
+
+</html>
